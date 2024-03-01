@@ -19,8 +19,6 @@ while(1):
         
         cv2.rectangle(frame,(100,100),(300,300),(0,255,0),0)  #leitura da máscara  
         hsv = cv2.cvtColor(roi, cv2.COLOR_BGR2HSV) #conversão do padrão RGB para HSV
-        
-        
          
     # definir gama de cor da pele em HSV
         lower_skin = np.array([0,20,70], dtype=np.uint8)
